@@ -10,13 +10,14 @@ echo ""
 
 # 当前路径
 $currentPath = Get-Location;
-$path = $currentPath.Path.Replace("txt-to-m3u", "");
+$path = $currentPath.Path.Replace("txt-to-m3u", "").Replace("\", "/");
 $matchParentPath = Read-Host "请输入需要替换的路径（默认：$path）"
 echo ""
 $replaceParentPath = Read-Host "请输入替换后的路径（回车替换为空）"
 if ($matchParentPath -eq "") {
     $matchParentPath = $path;
 }
+$matchParentPath = $matchParentPath.Replace("\", "/");
 echo ""
 $null = Read-Host "【$matchParentPath】 => 【$replaceParentPath】，请按回车继续"
 # 本地歌单

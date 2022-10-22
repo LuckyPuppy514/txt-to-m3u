@@ -46,7 +46,7 @@ foreach ($dir in $dirs){
         $_ -is [System.IO.FileInfo] -and $_.Extension -eq '.flac';
     } |
     Foreach-Object {
-        $writer.WriteLine($_.FullName);
+        $writer.WriteLine($_.FullName.Replace("\", "/"));
         $writer.Flush();
         $count = $count + 1;
     }
