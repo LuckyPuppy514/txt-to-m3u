@@ -8,7 +8,7 @@
 
 ### 扫描本地歌曲
 
-右键使用 Powershell 运行 scan.ps1 扫描本地歌曲路径
+右键使用 Powershell 运行 scan.ps1 扫描本地歌曲
 
 ![20221022134617](https://cdn.jsdelivr.net/gh/LuckyPuppy514/pic-bed/common/20221022134617.png)
 
